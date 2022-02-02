@@ -472,7 +472,7 @@ if ENABLE_AXES:
     AUTHENTICATION_BACKENDS.insert(0, "axes.backends.AxesBackend")
 
     # must be the last item in the middleware stack
-    MIDDLEWARE.append("core.middleware.axes.AxesMiddleware")
+    #MIDDLEWARE.append("core.middleware.axes.AxesMiddleware")
 
     AXES_COOLOFF_TIME = timedelta(minutes=env.int("AXES_COOLOFF_TIME", 15))
     AXES_BLACKLISTED_URLS = [
